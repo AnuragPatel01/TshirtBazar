@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T-SHIRTS FOR SALE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("colorful-shopping-bags.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      h2 {
+        backdrop-filter: blur(3px);
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        background: linear-gradient(to right, #e3d8f4, #d1c0e9, #e3d8f4);
+      }
+
+      .images {
+        display: flex;
+        justify-content: center;
+        margin-left: 4.5%;
+        margin-top: 50px;
+        /* justify-content:space-between ; */
+      }
+
+      #container {
+        display: flex;
+        align-items: center;
+        margin: auto;
+      }
+
+      #displayImage {
+        height: 500px;
+        width: 350px;
+        border-radius: 30px;
+        box-shadow: -35px -30px #bb9ce6;
+        cursor: pointer;
+        box-shadow: -35px -30px #bb9ce6;
+        transition: all 0.5s ease-in-out;
+      }
+
+      /* #displayImage:hover { */
+        /* box-shadow: -35px -30px #bb9ce6;
+        transition: all 0.5s ease-in-out; */
+      /* } */
+
+      #buttons_container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 50px;
+      }
+
+      .buttons {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        border: none;
+        /* color: black; */
+        border-radius: 25px;
+      }
+
+       .buttons:hover {
+        box-shadow: 6px 8px 12px #bb9ce6;
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.2);
+       }
+
+      #options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* justify-content: space-around; */
+      }
+
+      .collar_round {
+        margin-left: 25px;
+        margin-top: 25px;
+        height: 80px;
+        width: 60px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .collar_round:hover {
+        box-shadow: 5px 8px 12px #bb9ce6;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>
+      <!-- <marquee scrollamount="12"> -->
+      CHOOSE WITHIN THE AVAILABLE OPTIONS
+      <!-- </marquee> -->
+    </h2>
+
+    <div class="container">
+      <div class="images">
+        <img id="displayImage" src="joker.webp" alt="" />
+        <div id="options">
+          <a href="index.html">
+            <img class="collar_round" src="orange.webp" alt="" />
+          </a>
+          <a href="option.html">
+            <img class="collar_round" src="Rblue.webp" alt="" />
+          </a>
+
+          <a href="prints.html">
+            <img class="collar_round" src="joker.webp" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div id="buttons_container">
+        <div
+          class="buttons"
+          style="background-image: url('joker.webp')"
+          onmouseover="changeImage('joker.webp')"
+        ></div>
+        <div
+          class="buttons"
+          style="background-image: url('it.webp')"
+          onmouseover="changeImage('it.webp')"
+        ></div>
+        <div
+          class="buttons"
+          style="background-image: url('panda.webp')"
+          onmouseover="changeImage('panda.webp')"
+        ></div>
+        <div
+          class="buttons"
+          style="background-image: url('believe.webp')"
+          onmouseover="changeImage('believe.webp')"
+        ></div>
+        <div
+          class="buttons"
+          style="background-image: url('punisher.jpeg')"
+          onmouseover="changeImage('punisher.jpeg')"
+        ></div>
+      </div>
+    </div>
+
+    <script>
+      function changeImage(x) {
+        document.getElementById("displayImage").src = x;
+      }
+    </script>
+  </body>
+</html>
